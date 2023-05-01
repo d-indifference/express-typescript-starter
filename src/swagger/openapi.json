@@ -1,0 +1,41 @@
+{
+	"openapi": "3.0.1",
+	"info": {
+		"title": "test API",
+		"version": "v1"
+	},
+	"servers": [
+		{
+			"url": "http://localhost:3000"
+		}
+	],
+	"tags": [
+		{
+			"name": "API functions",
+			"description": "API functions of our application"
+		}
+	],
+	"paths": {
+		"/": {
+			"get": {
+				"summary": "returns simple answer from get",
+				"tags": [
+					"API functions"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"content": {
+							"document": {
+								"schema": {
+									"type": "string",
+									"example": "some text"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
